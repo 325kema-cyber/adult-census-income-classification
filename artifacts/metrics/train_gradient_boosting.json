@@ -1,0 +1,43 @@
+{
+  "model_name": "gradient_boosting",
+  "dataset_name": "train",
+  "accuracy": 0.8690144089268804,
+  "roc_auc": 0.9243948253047011,
+  "classification_report": {
+    "<=50K": {
+      "precision": 0.8849017644850456,
+      "recall": 0.951587942403445,
+      "f1-score": 0.9170341071196991,
+      "support": 29724.0
+    },
+    ">50K": {
+      "precision": 0.7975805317203545,
+      "recall": 0.6064819766819981,
+      "f1-score": 0.6890266131972294,
+      "support": 9349.0
+    },
+    "accuracy": 0.8690144089268804,
+    "macro avg": {
+      "precision": 0.8412411481027,
+      "recall": 0.7790349595427215,
+      "f1-score": 0.8030303601584643,
+      "support": 39073.0
+    },
+    "weighted avg": {
+      "precision": 0.8640084057688708,
+      "recall": 0.8690144089268804,
+      "f1-score": 0.8624787348503272,
+      "support": 39073.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      28285,
+      1439
+    ],
+    [
+      3679,
+      5670
+    ]
+  ]
+}
