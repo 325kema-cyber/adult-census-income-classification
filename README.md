@@ -92,6 +92,12 @@ artifacts/metrics/model_comparison.csv
 - `RandomForestClassifier` performed well on the test set but showed near-perfect training performance, suggesting stronger overfitting.
 - `LogisticRegression` provided a solid and interpretable baseline, but underperformed relative to the tree-based models on this dataset.
 
+### Model Interpretation
+
+`GradientBoostingClassifier` was the strongest model in this project because it achieved the best test-set results across all major evaluation metrics, including accuracy, ROC-AUC, macro F1, and weighted F1. This indicates that it captured nonlinear relationships in the Adult dataset more effectively than the linear baseline while also generalizing better than the random forest model.
+
+`RandomForestClassifier` showed clear signs of overfitting. Its training performance was nearly perfect, but its test-set performance was noticeably lower. That gap suggests the model fit the training data extremely well but did not generalize as strongly to unseen examples.
+
 ### Example ROC Curve
 
 Below is the ROC curve for the best-performing model, `GradientBoostingClassifier`:
