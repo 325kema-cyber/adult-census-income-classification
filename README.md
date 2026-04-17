@@ -92,6 +92,12 @@ artifacts/metrics/model_comparison.csv
 - `RandomForestClassifier` performed well on the test set but showed near-perfect training performance, suggesting stronger overfitting.
 - `LogisticRegression` provided a solid and interpretable baseline, but underperformed relative to the tree-based models on this dataset.
 
+### Example ROC Curve
+
+Below is the ROC curve for the best-performing model, `GradientBoostingClassifier`:
+
+![Gradient Boosting ROC Curve](artifacts/plots/roc_gradient_boosting.png)
+
 ## Visualizations
 
 The project saves the following plots for each model:
@@ -160,7 +166,7 @@ The script will:
 4. Evaluate each model on train and test data
 5. Save metrics, comparison tables, visualizations, and feature importance outputs
 
-## Resume-Style Summary
+## Summary
 
 - Built an end-to-end income classification project on the Adult Census dataset using Python, `pandas`, and `scikit-learn`
 - Implemented a unified preprocessing pipeline for mixed numeric and categorical features with model comparison across Logistic Regression, Random Forest, and Gradient Boosting
